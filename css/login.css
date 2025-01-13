@@ -4,11 +4,14 @@
   padding: 0;
 }
 
-.background-wrapper {
-  height: 100vh;
+body {
   background-image: url(../img/bg-2.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+}
+
+.background-wrapper {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +23,7 @@
   border-radius: 8px;
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .logo-wrapper {
