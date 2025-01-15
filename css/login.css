@@ -202,6 +202,10 @@ footer p {
   .login-container {
     margin-left: 16px;
     margin-right: 16px;
-    margin-top: 56px;
+    margin-top: 72px;
+  }
+
+  footer {
+    padding-top: 0;
   }
 }
