@@ -16,3 +16,25 @@ emailOption.addEventListener('change', () => {
     idInputGroup.classList.add('hidden')
   }
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+  const inputNumberField = document.getElementById('idNumber')
+  const inputEmailField = document.getElementById('email')
+  const validateButton = document.getElementById('validateButton')
+
+  function toggleValidateButton() {
+    const isInputNumberFilled = inputNumberField.value.trim() !== "";
+    const isInputEmailFilled = inputEmailField.value.trim() !== "";
+
+    if (isInputEmailFilled || isInputNumberFilled) {
+      validateButton.disabled = false
+      validateButton.classList.remove('disabled')
+    } else {
+      validateButton.disabled = true
+      validateButton.classList.add('disabled')
+    }
+  }
+
+  inputNumberField.addEventListener('input', toggleValidateButton)
+  inputEmailField.addEventListener('input', toggleValidateButton)
+})
