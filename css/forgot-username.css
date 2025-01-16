@@ -255,7 +255,7 @@ footer p {
 
 @media (max-width: 767.98px) {
   .background-auth {
-    height: 60vh;
+    height: 100%;
     background-size: contain;
     align-items: flex-start;
   }
@@ -277,13 +277,14 @@ footer p {
 
   footer {
     padding-top: 0;
+    margin-top: 24px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 997.98px) {
   .background-auth {
     align-items: center;
-    height: 90vh;
+    height: 100%;
   }
 
   .forgot-username-container {
