@@ -281,13 +281,29 @@ footer p {
   }
 }
 
-@media (min-width: 768px) and (max-width: 997.98px) {
+@media (min-width: 768px) and (max-width: 1180px) {
   .background-auth {
     align-items: center;
-    height: 100%;
+    height: 80vh;
   }
 
   .forgot-username-container {
     margin-top: 56px;
+  }
+
+  .forgot-username-container .buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  .forgot-username-container .buttons button {
+    width: 100%;
+  }
+
+  footer p {
+    color: #6C757D;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
   }
 }

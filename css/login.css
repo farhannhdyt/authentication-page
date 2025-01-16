@@ -210,3 +210,13 @@ footer p {
     margin-top: 24px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1180px) {
+  .background-auth {
+    height: 70vh;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+}
